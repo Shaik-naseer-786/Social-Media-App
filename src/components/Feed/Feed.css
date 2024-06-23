@@ -1,0 +1,163 @@
+/* Feed.css */
+
+.feeds {
+    display: grid;
+    grid-template-columns: 1fr; /* Each post takes up the full width */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .feed-card {
+    position: relative; /* Add this to position the comment pop-up correctly */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .feed-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-weight: bold;
+  }
+  
+  .post-time {
+    color: #666;
+    font-size: 0.8rem;
+  }
+  
+  .feed-content {
+    margin-bottom: 10px;
+  }
+  
+  .feed-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .feed-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-icons, .right-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-icon {
+    cursor: pointer;
+    color: #666;
+    font-size: 20px; /* Increase the size of the icons */
+    transition: color 0.3s ease;
+  }
+  
+  .action-icon:hover {
+    color: #333;
+  }
+  
+  .options-icon {
+    cursor: pointer;
+  }
+  
+  .options-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .comment-popup {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .comment-popup-content {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .comment-profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .comment-name {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .new-comment-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .new-comment-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .submit-comment-btn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #0084ff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .submit-comment-btn:hover {
+    background-color: #006bb3;
+  }
+  

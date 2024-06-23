@@ -1,0 +1,10 @@
+/* DarkMode.css */
+.dark-mode-icon {
+    transition: .3s ease;
+    color: var(--color-primary);
+  }
+  
+  .dark-mode-icon:hover {
+    transform: scale(1.2);
+
+  }
